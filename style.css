@@ -1,0 +1,85 @@
+/*   FORM TEMPLATE   */
+.form-fieldset {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.form-fieldset .label-field {
+    width: 260px;
+}
+
+/*  LABEL OUTPUT TEMPLATE  */
+.choco-main {
+    border: 3px solid #957964;
+    border-radius: 30px;
+    padding: 25px;
+}
+.choco-tables-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.table-top table th,
+.table-top table td,
+.weigth-table table th,
+.weigth-table table td{
+    border: 2px solid #957964;
+    padding: 6px 15px;
+}
+.table-top table th,
+.table-top table td,
+.weigth-table table th {
+    background-color: #957964;
+    color: #ffffff;
+}
+.common-warning,
+.temperature {
+    text-align: right;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.ingredients {
+    padding-bottom: 25px;
+}
+
+@media print {
+    .page-template-single-choco #main {
+        width: 100mm;
+        height: 100mm;
+        font-size: 0.6em;
+    }
+    .page-template-single-choco #main h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .page-template-single-choco .choco-main {
+        padding: 5px;
+        border-radius: 12px;
+    }
+    .page-template-single-choco .wrap {
+        padding: 0;
+    }
+    .table-top table th,
+    .table-top table td,
+    .weigth-table table th,
+    .weigth-table table td{
+        padding: 2px;
+        border: 1px solid #957964;
+    }
+    .ingredients,
+    .common-warning,
+    .temperature {
+        padding-bottom: 8px;
+    }
+    .barcode img {
+        width: 100%;
+        height: auto;
+        padding: 0 8px;
+    }
+    .page-template-single-choco .site-content,
+    .page-template-single-choco .site-branding {
+        padding: 0;
+    }
+}
